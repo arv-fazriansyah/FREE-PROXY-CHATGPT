@@ -32,7 +32,8 @@ Untuk menggunakan proyek ini, Anda perlu melakukan beberapa langkah:
      - `/{token}/delete/{user}`: Menghapus pengguna.
      - `/{token}/register/{user}`: Mendaftarkan pengguna baru dan memberikan kunci API.
      - `/{token}/reset/{user}`: Mengatur ulang kunci API pengguna.
-     - `/{token}/info/{user}`: Mendapatkan informasi pengguna atau `/{token}/info` untuk mendapatkan informasi semua pengguna.
+     - `/{token}/info/{user}`: Mendapatkan informasi pengguna.
+     - `/{token}/info` untuk mendapatkan informasi semua pengguna.
 
 ## Kontribusi
 
