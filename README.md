@@ -2,6 +2,10 @@
 
 ![Cloudflare](https://www.cloudflare.com/img/logo-cloudflare-dark.svg)
 
+![Cloudflare](https://img.shields.io/badge/Platform-Cloudflare-orange)
+![Bahasa](https://img.shields.io/badge/Bahasa-JavaScript-yellow)
+![Lisensi](https://img.shields.io/badge/Lisensi-MIT-green)
+
 Ini adalah proyek untuk mengelola pengguna menggunakan Cloudflare Workers. Skrip ini memungkinkan Anda untuk melakukan berbagai tindakan seperti registrasi pengguna, menghapus pengguna, mengatur ulang token pengguna, dan lainnya.
 
 ## Cara Menggunakan
