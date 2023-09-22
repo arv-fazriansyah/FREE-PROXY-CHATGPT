@@ -14,7 +14,8 @@ Untuk menggunakan proyek ini, Anda perlu melakukan beberapa langkah:
 1. **Setup Worker di Cloudflare**
 
    - Pastikan Anda memiliki akun Cloudflare.
-   - Buat Worker baru di dashboard Cloudflare dan salin script ini ke dalam editor kode Worker Anda.
+   - Buat Worker baru di dashboard Cloudflare dan salin script `worker.js` ini ke dalam editor kode Worker Anda.
+   - Binding KV
 
 2. **Konfigurasi Variabel Lingkungan**
 
