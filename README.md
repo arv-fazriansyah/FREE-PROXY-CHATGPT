@@ -1,44 +1,42 @@
-# FREE-PROXY-CHATGPT
+# FREE PROXY CHATGPT
 
 ![Cloudflare](https://www.cloudflare.com/img/logo-cloudflare-dark.svg)
 
 ![Cloudflare](https://img.shields.io/badge/Platform-Cloudflare-orange)
 ![Bahasa](https://img.shields.io/badge/Bahasa-JavaScript-yellow)
-![Lisensi](https://img.shields.io/badge/Lisensi-MIT-green)
 
 Ini adalah proyek untuk mengelola pengguna menggunakan Cloudflare Workers. Skrip ini memungkinkan Anda untuk melakukan berbagai tindakan seperti registrasi pengguna, menghapus pengguna, mengatur ulang token pengguna, dan lainnya.
 
-## Cara Menggunakan
+## Penggunaan
 
-1. Pastikan Anda memiliki akun Cloudflare dan akses ke layanan Cloudflare Workers.
+Untuk menggunakan proyek ini, Anda perlu melakukan beberapa langkah:
 
-2. Salin seluruh konten skrip `worker.js` ke Cloudflare Workers Anda. Anda dapat melakukannya melalui dashboard Cloudflare atau dengan menggunakan [Cloudflare CLI](https://developers.cloudflare.com/workers/cli-wrangler).
+1. **Setup Worker di Cloudflare**
 
-3. Setel variabel lingkungan yang diperlukan. Pastikan untuk mengatur variabel `ACCESS_TOKEN` dan `API_KEY` jika diperlukan.
+   - Pastikan Anda memiliki akun Cloudflare.
+   - Buat Worker baru di dashboard Cloudflare dan salin script ini ke dalam editor kode Worker Anda.
 
-4. Simpan perubahan Anda.
+2. **Konfigurasi Variabel Lingkungan**
 
-5. Gunakan URL worker yang telah Anda setel sebagai endpoint untuk melakukan tindakan manajemen pengguna melalui API HTTP.
+   - Anda perlu mengatur beberapa variabel lingkungan yang dibutuhkan oleh skrip. Berikut adalah variabel yang perlu diatur:
 
-## Endpoints API
+     - `ACCESS_TOKEN`: Token akses yang diperlukan untuk otorisasi permintaan.
+     - `URL_HOST`: Host URL yang akan menjadi tujuan permintaan yang diforward oleh Worker.
+     - `API_KEY` (opsional): API key jika diperlukan untuk autentikasi ke host URL.
 
-Berikut adalah daftar endpoints API yang dapat Anda akses:
+3. **Menggunakan Worker**
 
-- `/<token>/register/<nama_pengguna>`: Mendaftarkan pengguna baru.
-- `/<token>/reset/<nama_pengguna>`: Mengatur ulang token pengguna.
-- `/<token>/delete/<nama_pengguna>`: Menghapus pengguna.
-- `/<token>/info` : Mendapatkan informasi tentang semua pengguna.
+   - Proyek ini memungkinkan Anda untuk melakukan beberapa tindakan berdasarkan permintaan yang diterima, seperti:
 
-Pastikan untuk mengganti `<token>` dengan token akses yang Anda atur dalam variabel lingkungan.
+     - `/{token}/delete/{user}`: Menghapus pengguna.
+     - `/{token}/register/{user}`: Mendaftarkan pengguna baru dan memberikan kunci API.
+     - `/{token}/reset/{user}`: Mengatur ulang kunci API pengguna.
+     - `/{token}/info/{user}`: Mendapatkan informasi pengguna atau `/{token}/info` untuk mendapatkan informasi semua pengguna.
 
 ## Kontribusi
 
 Anda dipersilakan untuk berkontribusi pada proyek ini. Silakan buat permintaan tarik (pull request) dengan perbaikan atau fitur baru yang Anda tambahkan.
 
-## Lisensi
-
-Proyek ini dilisensikan di bawah [Lisensi MIT](LICENSE).
-
 ---
 
-Proyek ini dibuat dengan cinta oleh [Nama Anda]. Silakan hubungi kami jika Anda memiliki pertanyaan atau saran.
+Silakan hubungi kami jika Anda memiliki pertanyaan atau saran.
