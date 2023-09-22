@@ -15,7 +15,7 @@ Untuk menggunakan proyek ini, Anda perlu melakukan beberapa langkah:
 
    - Pastikan Anda memiliki akun Cloudflare.
    - Buat Worker baru di dashboard Cloudflare dan salin script `worker.js` ini ke dalam editor kode Worker Anda.
-   - Binding KV
+   - Binding KV dan setting dengan nama `KV`
 
 2. **Konfigurasi Variabel Lingkungan**
 
